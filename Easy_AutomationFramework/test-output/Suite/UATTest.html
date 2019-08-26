@@ -1,0 +1,438 @@
+<html>
+<head>
+    <title>TestNG: UATTest</title>
+    <link href="../testng.css" rel="stylesheet" type="text/css"/>
+    <link href="../my-testng.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        .log {
+            display: none;
+        }
+
+        .stack-trace {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        <!--
+        function flip(e) {
+            current = e.style.display;
+            if (current == 'block') {
+                e.style.display = 'none';
+                return 0;
+            } else {
+                e.style.display = 'block';
+                return 1;
+            }
+        }
+
+        function toggleBox(szDivId, elem, msg1, msg2) {
+            var res = -1;
+            if (document.getElementById) {
+                res = flip(document.getElementById(szDivId));
+            } else if (document.all) {
+                // this is the way old msie versions work
+                res = flip(document.all[szDivId]);
+            }
+            if (elem) {
+                if (res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+            }
+
+        }
+
+        function toggleAllBoxes() {
+            if (document.getElementsByTagName) {
+                d = document.getElementsByTagName('div');
+                for (i = 0; i < d.length; i++) {
+                    if (d[i].className == 'log') {
+                        flip(d[i]);
+                    }
+                }
+            }
+        }
+
+        // -->
+    </script>
+
+</head>
+<body>
+<h2 align='center'>UATTest</h2>
+<table border='1' align="center">
+    <tr>
+        <td>Tests passed/Failed/Skipped:</td>
+        <td>40/0/0</td>
+    </tr>
+    <tr>
+        <td>Started on:</td>
+        <td>Fri Nov 30 14:11:51 EST 2018</td>
+    </tr>
+    <tr>
+        <td>Total time:</td>
+        <td>395 seconds (395030 ms)</td>
+    </tr>
+    <tr>
+        <td>Included groups:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Excluded groups:</td>
+        <td></td>
+    </tr>
+</table>
+<p/>
+<small><i>(Hover the method name to see the test class name)</i></small>
+<p/>
+<table width='100%' border='1' class='invocation-passed'>
+    <tr>
+        <td colspan='4' align='center'><b>PASSED TESTS</b></td>
+    </tr>
+    <tr>
+        <td><b>Test method</b></td>
+        <td width="30%"><b>Exception</b></td>
+        <td width="10%"><b>Time (seconds)</b></td>
+        <td><b>Instance</b></td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accesForgotPasswordPage()'><b>accesForgotPasswordPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accesLoginPage()'><b>accesLoginPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login
+        </td>
+        <td></td>
+        <td>1</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessApplicationsPage()'><b>accessApplicationsPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessCCAdminPage()'>
+            <b>accessCCAdminPage</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>1</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessContractorsPage()'><b>accessContractorsPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessControlCenterPage()'><b>accessControlCenterPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_admin, Password123
+        </td>
+        <td></td>
+        <td>1</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessCustomersPage()'>
+            <b>accessCustomersPage</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessFelixbleWorkflowSetupPage()'><b>accessFelixbleWorkflowSetupPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login
+        </td>
+        <td></td>
+        <td>7</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessGroupAdministrationPage()'><b>accessGroupAdministrationPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessProjectConfigPage()'><b>accessProjectConfigPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessUserAdministrationPage()'><b>accessUserAdministrationPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.accessUserAuditEventsPage()'><b>accessUserAuditEventsPage</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.contractorBannedTermsAccess()'><b>contractorBannedTermsAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>6</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.contractorNonTranslatablesAccess()'><b>contractorNonTranslatablesAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_ptsmanager, Password123,
+            (//a[@id='mp-project-2-EN-ES'])[1]
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.contractorReportsAccess()'><b>contractorReportsAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>10</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.reviewerAction()'><b>reviewerAction</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_proofer, Password123, (//a[@id='mp-project-2-EN-ES'])[1],
+            //a[@id='mp-task-page-id-980']
+        </td>
+        <td></td>
+        <td>18</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tamLogin()'><b>tamLogin</b><br>Test class:
+            com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_tam, Password123
+        </td>
+        <td></td>
+        <td>6</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmAdminToolsAccess()'>
+            <b>tmAdminToolsAccess</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>3</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmChangePasswordLink()'>
+            <b>tmChangePasswordLink</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>5</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmComponents()'><b>tmComponents</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters: auto_tam, Password123,
+            (//a[@id='mp-project-webcatsso-2-EN-ES'])[1], (//a[@id='mp-project-2-EN-ES'])[1]
+        </td>
+        <td></td>
+        <td>11</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmContractorTaskAssignment()'><b>tmContractorTaskAssignment</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_ptsmanager, Password123, 957, //input[@id='mp-row-[957]'],
+            (//a[@id='mp-project-2-EN-ES'])[1], //span[text()='auto_translator- (atr)'], //span[text()='auto_proofer-
+            (auto proofer)']
+        </td>
+        <td></td>
+        <td>52</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmFeedbackDashboardAccess()'><b>tmFeedbackDashboardAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmGlossaryPageAccess()'>
+            <b>tmGlossaryPageAccess</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>7</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmHelpLink()'><b>tmHelpLink</b><br>Test class:
+            com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmImpersonateUserLink()'><b>tmImpersonateUserLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>2</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmLiveEditAccess()'><b>tmLiveEditAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>5</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmMediaBenchLink()'><b>tmMediaBenchLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmProductFeedbackLink()'><b>tmProductFeedbackLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>0</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmSegmentSearchAccess()'><b>tmSegmentSearchAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>3</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmTaskAssignment()'><b>tmTaskAssignment</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_tam, Password123, 895, //input[@id='mp-row-[895]'],
+            (//a[@id='mp-project-2-EN-ES'])[1]
+        </td>
+        <td></td>
+        <td>31</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmTextBenchSettingsAccess()'><b>tmTextBenchSettingsAccess</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>8</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmUserProfileLink()'>
+            <b>tmUserProfileLink</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>3</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tmWebCATTSSOLink()'><b>tmWebCATTSSOLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters: (//span[text()='Desitin -
+            QA'])[2]
+        </td>
+        <td></td>
+        <td>8</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmActivityStatsLink()'>
+            <b>tpmActivityStatsLink</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmAdminDashboardLink()'><b>tpmAdminDashboardLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmChangePasswordLink()'><b>tpmChangePasswordLink</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmComponents()'><b>tpmComponents</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_tam, Password123,
+            (//a[@id='mp-project-webcatsso-2-EN-ES'])[1]
+        </td>
+        <td></td>
+        <td>31</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmUserProfileLink()'>
+            <b>tpmUserProfileLink</b><br>Test class: com.motioncore.automationtestsuat.UatIntegrationTest ()
+        </td>
+        <td></td>
+        <td>4</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.tpmWebCattSSO()'><b>tpmWebCattSSO</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            (//a[@id='mp-project-webcatsso-2-EN-ES'])[1], (//span[text()='Desitin - QA'])[2]
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtestsuat.UatIntegrationTest.translatorAction()'><b>translatorAction</b><br>Test
+            class: com.motioncore.automationtestsuat.UatIntegrationTest ()<br>Parameters:
+            https://control.uat.motionpoint.com/#/login, auto_translator, Password123,
+            (//a[@id='mp-project-2-EN-ES'])[1], //a[@id='mp-task-page-id-980']
+        </td>
+        <td></td>
+        <td>53</td>
+        <td>com.motioncore.automationtestsuat.UatIntegrationTest@2c282004</td>
+    </tr>
+</table>
+<p>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<html>
+<head>
+    <title>TestNG: Default test</title>
+    <link href="../testng.css" rel="stylesheet" type="text/css"/>
+    <link href="../my-testng.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        .log {
+            display: none;
+        }
+
+        .stack-trace {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        <!--
+        function flip(e) {
+            current = e.style.display;
+            if (current == 'block') {
+                e.style.display = 'none';
+                return 0;
+            } else {
+                e.style.display = 'block';
+                return 1;
+            }
+        }
+
+        function toggleBox(szDivId, elem, msg1, msg2) {
+            var res = -1;
+            if (document.getElementById) {
+                res = flip(document.getElementById(szDivId));
+            } else if (document.all) {
+                // this is the way old msie versions work
+                res = flip(document.all[szDivId]);
+            }
+            if (elem) {
+                if (res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+            }
+
+        }
+
+        function toggleAllBoxes() {
+            if (document.getElementsByTagName) {
+                d = document.getElementsByTagName('div');
+                for (i = 0; i < d.length; i++) {
+                    if (d[i].className == 'log') {
+                        flip(d[i]);
+                    }
+                }
+            }
+        }
+
+        // -->
+    </script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2>
+<table border='1' align="center">
+    <tr>
+        <td>Tests passed/Failed/Skipped:</td>
+        <td>38/1/0</td>
+    </tr>
+    <tr>
+        <td>Started on:</td>
+        <td>Thu Dec 13 15:48:28 EST 2018</td>
+    </tr>
+    <tr>
+        <td>Total time:</td>
+        <td>731 seconds (731226 ms)</td>
+    </tr>
+    <tr>
+        <td>Included groups:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Excluded groups:</td>
+        <td></td>
+    </tr>
+</table>
+<p/>
+<small><i>(Hover the method name to see the test class name)</i></small>
+<p/>
+<table width='100%' border='1' class='invocation-failed'>
+    <tr>
+        <td colspan='4' align='center'><b>FAILED TESTS</b></td>
+    </tr>
+    <tr>
+        <td><b>Test method</b></td>
+        <td width="30%"><b>Exception</b></td>
+        <td width="10%"><b>Time (seconds)</b></td>
+        <td><b>Instance</b></td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.reviewerAction()'><b>reviewerAction</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_reviewer, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1], //a[@id='mp-task-page-id-6']
+        </td>
+        <td>
+            <div><pre>java.lang.IllegalArgumentException: Test executionno such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@class=&apos;cke_wysiwyg_frame cke_reset&apos;]&quot;}
+  (Session info: headless chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;MP-LAP-321&apos;, ip: &apos;192.168.0.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\nperez\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60298}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1f48fb4f72a04268462bbf5e1138e0d4
+*** Element info: {Using=xpath, value=//iframe[@class=&apos;cke_wysiwyg_frame cke_reset&apos;]}
+	at com.motioncore.automationtests.IntegrationTest.reviewerAction(IntegrationTest.java:1136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre>
+            </div>
+            <a href='#'
+               onClick='toggleBox("stack-trace1608929464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+                to show all stack frames</a>
+            <div class='stack-trace' id='stack-trace1608929464'><pre>java.lang.IllegalArgumentException: Test executionno such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//iframe[@class=&apos;cke_wysiwyg_frame cke_reset&apos;]&quot;}
+  (Session info: headless chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;MP-LAP-321&apos;, ip: &apos;192.168.0.175&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\nperez\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60298}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1f48fb4f72a04268462bbf5e1138e0d4
+*** Element info: {Using=xpath, value=//iframe[@class=&apos;cke_wysiwyg_frame cke_reset&apos;]}
+	at com.motioncore.automationtests.IntegrationTest.reviewerAction(IntegrationTest.java:1136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre>
+            </div>
+        </td>
+        <td>76</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+</table>
+<p>
+<table width='100%' border='1' class='invocation-passed'>
+    <tr>
+        <td colspan='4' align='center'><b>PASSED TESTS</b></td>
+    </tr>
+    <tr>
+        <td><b>Test method</b></td>
+        <td width="30%"><b>Exception</b></td>
+        <td width="10%"><b>Time (seconds)</b></td>
+        <td><b>Instance</b></td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accesForgotPasswordPage()'>
+            <b>accesForgotPasswordPage</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>5</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accesLoginPage()'><b>accesLoginPage</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>6</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessApplicationsPage()'>
+            <b>accessApplicationsPage</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessCCAdminPage()'><b>accessCCAdminPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>8</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessContractorsPage()'>
+            <b>accessContractorsPage</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>14</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessControlCenterPage()'>
+            <b>accessControlCenterPage</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>6</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessCustomersPage()'><b>accessCustomersPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessFelixbleWorkflowSetupPage()'><b>accessFelixbleWorkflowSetupPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessGroupAdministrationPage()'><b>accessGroupAdministrationPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessProjectConfigPage()'>
+            <b>accessProjectConfigPage</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessUserAdministrationPage()'><b>accessUserAdministrationPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accessUserAuditEventsPage()'><b>accessUserAuditEventsPage</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, appadmin, Password456
+        </td>
+        <td></td>
+        <td>13</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.accountManager()'><b>accountManager</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            //div[@class='editable-controls form-group']/select/option[@label='Auto TAM'],
+            //a[@id='mp-project-1-EN-DE']/ancestor::td/preceding-sibling::td[3]/a[@editable-select='project.accountMgr.id'],
+            Auto TAM
+        </td>
+        <td></td>
+        <td>16</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.contractorBannedTermsAccess()'><b>contractorBannedTermsAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_ptsmanager, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>22</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.contractorNonTranslatablesAccess()'><b>contractorNonTranslatablesAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_ptsmanager, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>22</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.contractorReportsAccess()'>
+            <b>contractorReportsAccess</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_ptsmanager, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>27</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.resetContractorTaskAssignment()'><b>resetContractorTaskAssignment</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_ptsmanager, Password456, 6,
+            //input[@id='mp-row-[6]'], (//a[@id='mp-project-1-EN-DE'])[1], //span[text()='auto_translator- (PTS
+            Translator)'], //span[text()='auto_reviewer- (PTS Reviewer)']
+        </td>
+        <td></td>
+        <td>45</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.resetTamTaskAssignment()'>
+            <b>resetTamTaskAssignment</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456, 6,
+            //input[@id='mp-row-[6]'], (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>29</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tamLogin()'><b>tamLogin</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmAdminToolsAccess()'><b>tmAdminToolsAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmChangePasswordLink()'>
+            <b>tmChangePasswordLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>17</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmComponents()'><b>tmComponents</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-webcatsso-1-EN-DE'])[1], (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmContractorTaskAssignment()'><b>tmContractorTaskAssignment</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_ptsmanager, Password456, 6,
+            //input[@id='mp-row-[6]'], (//a[@id='mp-project-1-EN-DE'])[1], //span[text()='auto_translator- (PTS
+            Translator)'], //span[text()='auto_reviewer- (PTS Reviewer)']
+        </td>
+        <td></td>
+        <td>52</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmFeedbackDashboardAccess()'><b>tmFeedbackDashboardAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>15</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmGlossaryPageAccess()'>
+            <b>tmGlossaryPageAccess</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>18</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmHelpLink()'><b>tmHelpLink</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmImpersonateUserLink()'>
+            <b>tmImpersonateUserLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>14</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmLiveEditAccess()'><b>tmLiveEditAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>14</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmProductFeedbackLink()'>
+            <b>tmProductFeedbackLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>14</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmTaskAssignment()'><b>tmTaskAssignment</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456, 6,
+            //input[@id='mp-row-[6]'], (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>41</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmTextBenchSettingsAccess()'><b>tmTextBenchSettingsAccess</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tmUserProfileLink()'><b>tmUserProfileLink</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_tam, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1]
+        </td>
+        <td></td>
+        <td>14</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tpmActivityStatsLink()'>
+            <b>tpmActivityStatsLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            auto_tam, Password456, https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>11</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tpmAdminDashboardLink()'>
+            <b>tpmAdminDashboardLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            auto_tam, Password456, https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>11</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tpmChangePasswordLink()'>
+            <b>tpmChangePasswordLink</b><br>Test class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            auto_tam, Password456, https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>12</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tpmComponents()'><b>tpmComponents</b><br>Test class:
+            com.motioncore.automationtests.IntegrationTest<br>Parameters: (//a[@id='mp-project-webcatsso-1-EN-DE'])[1],
+            auto_tam, Password456, https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>9</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.tpmUserProfileLink()'><b>tpmUserProfileLink</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters: auto_tam, Password456,
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home
+        </td>
+        <td></td>
+        <td>11</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+    <tr>
+        <td title='com.motioncore.automationtests.IntegrationTest.translatorAction()'><b>translatorAction</b><br>Test
+            class: com.motioncore.automationtests.IntegrationTest<br>Parameters:
+            https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home, auto_translator, Password456,
+            (//a[@id='mp-project-1-EN-DE'])[1], //a[@id='mp-task-page-id-6']
+        </td>
+        <td></td>
+        <td>31</td>
+        <td>com.motioncore.automationtests.IntegrationTest@3224f60b</td>
+    </tr>
+</table>
+<p>
+</body>
+</html>

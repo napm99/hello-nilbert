@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+    <parameter name="webCattSSOproject" value="(//a[@id=&#039;mp-project-webcatsso-2-EN-ES&#039;])[1]"/>
+    <parameter name="tamPassword" value="Password123"/>
+    <parameter name="tamUser" value="auto_tam"/>
+    <parameter name="tamFilterTaskBy" value="895"/>
+    <parameter name="ptsManagerPassword" value="Password123"/>
+    <parameter name="tmProject" value="(//a[@id=&#039;mp-project-2-EN-ES&#039;])[1]"/>
+    <parameter name="ptsTranslatorPassword" value="Password123"/>
+    <parameter name="taskForReview" value="//a[@id=&#039;mp-task-page-id-980&#039;]"/>
+    <parameter name="url" value="https://control.uat.motionpoint.com/#/login"/>
+    <parameter name="ptsTaskCheckbox" value="//input[@id=&#039;mp-row-[957]&#039;]"/>
+    <parameter name="ReviewerUserToAssign" value="//span[text()=&#039;auto_proofer- (auto proofer)&#039;]"/>
+    <parameter name="webCattProjectTitle" value="(//span[text()=&#039;Desitin - QA&#039;])[2]"/>
+    <parameter name="adminUser" value="auto_admin"/>
+    <parameter name="ptsReviewerUser" value="auto_proofer"/>
+    <parameter name="translatorUserToAssign" value="//span[text()=&#039;auto_translator- (atr)&#039;]"/>
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="tamTaskCheckbox" value="//input[@id=&#039;mp-row-[895]&#039;]"/>
+    <parameter name="ptsFilterTaskBy" value="957"/>
+    <parameter name="taskForTranslation" value="//a[@id=&#039;mp-task-page-id-980&#039;]"/>
+    <parameter name="ptsManagerUser" value="auto_ptsmanager"/>
+    <parameter name="ptsTranslatorUser" value="auto_translator"/>
+    <parameter name="ptsReviewerPassword" value="Password123"/>
+    <parameter name="adminPassword" value="Password123"/>
+    <test name="UATTest">
+        <classes>
+            <class name="com.motioncore.automationtestsuat.UatIntegrationTest"/>
+        </classes>
+    </test> <!-- UATTest -->
+</suite> <!-- Failed suite [Suite] -->

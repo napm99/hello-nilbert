@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="39" passed="38">
+    <reporter-output>
+    </reporter-output>
+    <suite name="Default suite" duration-ms="731226" started-at="2018-12-13T20:48:28Z"
+           finished-at="2018-12-13T21:00:39Z">
+        <groups>
+        </groups>
+        <test name="Default test" duration-ms="731226" started-at="2018-12-13T20:48:28Z"
+              finished-at="2018-12-13T21:00:39Z">
+            <class name="com.motioncore.automationtests.IntegrationTest">
+                <test-method status="PASS"
+                             signature="accesLoginPage(java.lang.String)[pri:1, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accesLoginPage" duration-ms="6786" started-at="2018-12-13T15:48:28Z"
+                             finished-at="2018-12-13T15:48:34Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accesLoginPage -->
+                <test-method status="PASS"
+                             signature="accesForgotPasswordPage(java.lang.String)[pri:2, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accesForgotPasswordPage" duration-ms="5593" started-at="2018-12-13T15:48:34Z"
+                             finished-at="2018-12-13T15:48:40Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accesForgotPasswordPage -->
+                <test-method status="PASS"
+                             signature="tamLogin(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tamLogin" duration-ms="9688" started-at="2018-12-13T15:48:40Z"
+                             finished-at="2018-12-13T15:48:50Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tamLogin -->
+                <test-method status="PASS"
+                             signature="accountManager(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accountManager" duration-ms="16043" started-at="2018-12-13T15:48:50Z"
+                             finished-at="2018-12-13T15:49:06Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[//div[@class='editable-controls form-group']/select/option[@label='Auto TAM']]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//a[@id='mp-project-1-EN-DE']/ancestor::td/preceding-sibling::td[3]/a[@editable-select='project.accountMgr.id']]]>
+                            </value>
+                        </param>
+                        <param index="5">
+                            <value>
+                                <![CDATA[Auto TAM]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accountManager -->
+                <test-method status="PASS"
+                             signature="tpmComponents(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tpmComponents" duration-ms="9636" started-at="2018-12-13T15:49:06Z"
+                             finished-at="2018-12-13T15:49:15Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-webcatsso-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tpmComponents -->
+                <test-method status="PASS"
+                             signature="tpmUserProfileLink(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tpmUserProfileLink" duration-ms="11172" started-at="2018-12-13T15:49:15Z"
+                             finished-at="2018-12-13T15:49:27Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tpmUserProfileLink -->
+                <test-method status="PASS"
+                             signature="tpmChangePasswordLink(java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tpmChangePasswordLink" duration-ms="12231" started-at="2018-12-13T15:49:27Z"
+                             finished-at="2018-12-13T15:49:39Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tpmChangePasswordLink -->
+                <test-method status="PASS"
+                             signature="tpmAdminDashboardLink(java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tpmAdminDashboardLink" duration-ms="11780" started-at="2018-12-13T15:49:39Z"
+                             finished-at="2018-12-13T15:49:51Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tpmAdminDashboardLink -->
+                <test-method status="PASS"
+                             signature="tpmActivityStatsLink(java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tpmActivityStatsLink" duration-ms="11231" started-at="2018-12-13T15:49:51Z"
+                             finished-at="2018-12-13T15:50:02Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tpmActivityStatsLink -->
+                <test-method status="PASS"
+                             signature="tmComponents(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmComponents" duration-ms="12985" started-at="2018-12-13T15:50:02Z"
+                             finished-at="2018-12-13T15:50:15Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-webcatsso-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmComponents -->
+                <test-method status="PASS"
+                             signature="tmUserProfileLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:11, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmUserProfileLink" duration-ms="14700" started-at="2018-12-13T15:50:15Z"
+                             finished-at="2018-12-13T15:50:30Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmUserProfileLink -->
+                <test-method status="PASS"
+                             signature="tmChangePasswordLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmChangePasswordLink" duration-ms="17634" started-at="2018-12-13T15:50:30Z"
+                             finished-at="2018-12-13T15:50:47Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmChangePasswordLink -->
+                <test-method status="PASS"
+                             signature="tmImpersonateUserLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:13, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmImpersonateUserLink" duration-ms="14209" started-at="2018-12-13T15:50:47Z"
+                             finished-at="2018-12-13T15:51:01Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmImpersonateUserLink -->
+                <test-method status="PASS"
+                             signature="tmProductFeedbackLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:14, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmProductFeedbackLink" duration-ms="14101" started-at="2018-12-13T15:51:01Z"
+                             finished-at="2018-12-13T15:51:15Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmProductFeedbackLink -->
+                <test-method status="PASS"
+                             signature="tmHelpLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:15, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmHelpLink" duration-ms="12738" started-at="2018-12-13T15:51:15Z"
+                             finished-at="2018-12-13T15:51:28Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmHelpLink -->
+                <test-method status="PASS"
+                             signature="tmGlossaryPageAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:16, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmGlossaryPageAccess" duration-ms="18917" started-at="2018-12-13T15:51:28Z"
+                             finished-at="2018-12-13T15:51:47Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmGlossaryPageAccess -->
+                <test-method status="PASS"
+                             signature="tmLiveEditAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:17, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmLiveEditAccess" duration-ms="14373" started-at="2018-12-13T15:51:47Z"
+                             finished-at="2018-12-13T15:52:01Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmLiveEditAccess -->
+                <test-method status="PASS"
+                             signature="tmFeedbackDashboardAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:18, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmFeedbackDashboardAccess" duration-ms="15591" started-at="2018-12-13T15:52:01Z"
+                             finished-at="2018-12-13T15:52:17Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmFeedbackDashboardAccess -->
+                <test-method status="PASS"
+                             signature="tmAdminToolsAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:19, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmAdminToolsAccess" duration-ms="12580" started-at="2018-12-13T15:52:17Z"
+                             finished-at="2018-12-13T15:52:30Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmAdminToolsAccess -->
+                <test-method status="PASS"
+                             signature="tmTextBenchSettingsAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmTextBenchSettingsAccess" duration-ms="12951" started-at="2018-12-13T15:52:30Z"
+                             finished-at="2018-12-13T15:52:43Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmTextBenchSettingsAccess -->
+                <test-method status="PASS"
+                             signature="contractorNonTranslatablesAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="contractorNonTranslatablesAccess" duration-ms="22712"
+                             started-at="2018-12-13T15:52:43Z" finished-at="2018-12-13T15:53:05Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_ptsmanager]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- contractorNonTranslatablesAccess -->
+                <test-method status="PASS"
+                             signature="contractorBannedTermsAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:22, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="contractorBannedTermsAccess" duration-ms="22785" started-at="2018-12-13T15:53:05Z"
+                             finished-at="2018-12-13T15:53:28Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_ptsmanager]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- contractorBannedTermsAccess -->
+                <test-method status="PASS"
+                             signature="contractorReportsAccess(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:23, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="contractorReportsAccess" duration-ms="27853" started-at="2018-12-13T15:53:28Z"
+                             finished-at="2018-12-13T15:53:56Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_ptsmanager]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- contractorReportsAccess -->
+                <test-method status="PASS"
+                             signature="accessControlCenterPage(java.lang.String, java.lang.String, java.lang.String)[pri:24, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessControlCenterPage" duration-ms="6850" started-at="2018-12-13T15:53:56Z"
+                             finished-at="2018-12-13T15:54:03Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessControlCenterPage -->
+                <test-method status="PASS"
+                             signature="accessCCAdminPage(java.lang.String, java.lang.String, java.lang.String)[pri:25, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessCCAdminPage" duration-ms="8615" started-at="2018-12-13T15:54:03Z"
+                             finished-at="2018-12-13T15:54:11Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessCCAdminPage -->
+                <test-method status="PASS"
+                             signature="accessUserAdministrationPage(java.lang.String, java.lang.String, java.lang.String)[pri:26, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessUserAdministrationPage" duration-ms="13978" started-at="2018-12-13T15:54:11Z"
+                             finished-at="2018-12-13T15:54:25Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessUserAdministrationPage -->
+                <test-method status="PASS"
+                             signature="accessGroupAdministrationPage(java.lang.String, java.lang.String, java.lang.String)[pri:27, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessGroupAdministrationPage" duration-ms="13891" started-at="2018-12-13T15:54:25Z"
+                             finished-at="2018-12-13T15:54:39Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessGroupAdministrationPage -->
+                <test-method status="PASS"
+                             signature="accessCustomersPage(java.lang.String, java.lang.String, java.lang.String)[pri:28, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessCustomersPage" duration-ms="13706" started-at="2018-12-13T15:54:39Z"
+                             finished-at="2018-12-13T15:54:53Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessCustomersPage -->
+                <test-method status="PASS"
+                             signature="accessContractorsPage(java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessContractorsPage" duration-ms="14107" started-at="2018-12-13T15:54:53Z"
+                             finished-at="2018-12-13T15:55:07Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessContractorsPage -->
+                <test-method status="PASS"
+                             signature="accessUserAuditEventsPage(java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessUserAuditEventsPage" duration-ms="13724" started-at="2018-12-13T15:55:07Z"
+                             finished-at="2018-12-13T15:55:21Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessUserAuditEventsPage -->
+                <test-method status="PASS"
+                             signature="accessApplicationsPage(java.lang.String, java.lang.String, java.lang.String)[pri:31, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessApplicationsPage" duration-ms="13791" started-at="2018-12-13T15:55:21Z"
+                             finished-at="2018-12-13T15:55:35Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessApplicationsPage -->
+                <test-method status="PASS"
+                             signature="accessProjectConfigPage(java.lang.String, java.lang.String, java.lang.String)[pri:32, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessProjectConfigPage" duration-ms="13739" started-at="2018-12-13T15:55:35Z"
+                             finished-at="2018-12-13T15:55:48Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessProjectConfigPage -->
+                <test-method status="PASS"
+                             signature="accessFelixbleWorkflowSetupPage(java.lang.String, java.lang.String, java.lang.String)[pri:33, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="accessFelixbleWorkflowSetupPage" duration-ms="13594"
+                             started-at="2018-12-13T15:55:48Z" finished-at="2018-12-13T15:56:02Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[appadmin]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- accessFelixbleWorkflowSetupPage -->
+                <test-method status="PASS"
+                             signature="tmTaskAssignment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:34, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmTaskAssignment" duration-ms="41634" started-at="2018-12-13T15:56:02Z"
+                             finished-at="2018-12-13T15:56:44Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[6]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//input[@id='mp-row-[6]']]]>
+                            </value>
+                        </param>
+                        <param index="5">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmTaskAssignment -->
+                <test-method status="PASS"
+                             signature="tmContractorTaskAssignment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:35, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="tmContractorTaskAssignment" duration-ms="52226" started-at="2018-12-13T15:56:44Z"
+                             finished-at="2018-12-13T15:57:36Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_ptsmanager]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[6]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//input[@id='mp-row-[6]']]]>
+                            </value>
+                        </param>
+                        <param index="5">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="6">
+                            <value>
+                                <![CDATA[//span[text()='auto_translator- (PTS Translator)']]]>
+                            </value>
+                        </param>
+                        <param index="7">
+                            <value>
+                                <![CDATA[//span[text()='auto_reviewer- (PTS Reviewer)']]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- tmContractorTaskAssignment -->
+                <test-method status="PASS"
+                             signature="translatorAction(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:36, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="translatorAction" duration-ms="31516" started-at="2018-12-13T15:57:36Z"
+                             finished-at="2018-12-13T15:58:07Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_translator]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//a[@id='mp-task-page-id-6']]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- translatorAction -->
+                <test-method status="FAIL"
+                             signature="reviewerAction(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:37, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="reviewerAction" duration-ms="76893" started-at="2018-12-13T15:58:07Z"
+                             finished-at="2018-12-13T15:59:24Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_reviewer]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//a[@id='mp-task-page-id-6']]]>
+                            </value>
+                        </param>
+                    </params>
+                    <exception class="java.lang.IllegalArgumentException">
+                        <message>
+                            <![CDATA[Test executionno such element: Unable to locate element: {"method":"xpath","selector":"//iframe[@class='cke_wysiwyg_frame cke_reset']"}
+  (Session info: headless chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'MP-LAP-321', ip: '192.168.0.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\nperez\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60298}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1f48fb4f72a04268462bbf5e1138e0d4
+*** Element info: {Using=xpath, value=//iframe[@class='cke_wysiwyg_frame cke_reset']}]]>
+                        </message>
+                        <full-stacktrace>
+                            <![CDATA[java.lang.IllegalArgumentException: Test executionno such element: Unable to locate element: {"method":"xpath","selector":"//iframe[@class='cke_wysiwyg_frame cke_reset']"}
+  (Session info: headless chrome=71.0.3578.98)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'MP-LAP-321', ip: '192.168.0.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\nperez\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60298}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1f48fb4f72a04268462bbf5e1138e0d4
+*** Element info: {Using=xpath, value=//iframe[@class='cke_wysiwyg_frame cke_reset']}
+	at com.motioncore.automationtests.IntegrationTest.reviewerAction(IntegrationTest.java:1136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+                        </full-stacktrace>
+                    </exception> <!-- java.lang.IllegalArgumentException -->
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- reviewerAction -->
+                <test-method status="PASS"
+                             signature="resetContractorTaskAssignment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:38, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="resetContractorTaskAssignment" duration-ms="45047" started-at="2018-12-13T15:59:24Z"
+                             finished-at="2018-12-13T16:00:09Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_ptsmanager]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[6]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//input[@id='mp-row-[6]']]]>
+                            </value>
+                        </param>
+                        <param index="5">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                        <param index="6">
+                            <value>
+                                <![CDATA[//span[text()='auto_translator- (PTS Translator)']]]>
+                            </value>
+                        </param>
+                        <param index="7">
+                            <value>
+                                <![CDATA[//span[text()='auto_reviewer- (PTS Reviewer)']]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- resetContractorTaskAssignment -->
+                <test-method status="PASS"
+                             signature="resetTamTaskAssignment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:39, instance:com.motioncore.automationtests.IntegrationTest@3224f60b]"
+                             name="resetTamTaskAssignment" duration-ms="29613" started-at="2018-12-13T16:00:09Z"
+                             finished-at="2018-12-13T16:00:39Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[https://mcsmkkcontrolcenter.mpdvint.com/controlcenter#/home]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[auto_tam]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[Password456]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[6]]>
+                            </value>
+                        </param>
+                        <param index="4">
+                            <value>
+                                <![CDATA[//input[@id='mp-row-[6]']]]>
+                            </value>
+                        </param>
+                        <param index="5">
+                            <value>
+                                <![CDATA[(//a[@id='mp-project-1-EN-DE'])[1]]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- resetTamTaskAssignment -->
+            </class> <!-- com.motioncore.automationtests.IntegrationTest -->
+        </test> <!-- Default test -->
+    </suite> <!-- Default suite -->
+</testng-results>

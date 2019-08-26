@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MotionCore_IntegrationTest.xml]">
+    <parameter name="webCattSSOproject" value="(//a[@id=&#039;mp-project-webcatsso-1-EN-RU&#039;])[1]"/>
+    <parameter name="mediaBenchPage" value="Media-Bench"/>
+    <parameter name="accountManagerUser"
+               value="//div[@class=&#039;editable-controls form-group&#039;]/select/option[@label=&#039;Auto TAM&#039;]"/>
+    <parameter name="tamUser" value="auto_tam"/>
+    <parameter name="tamFilterTaskBy" value="6"/>
+    <parameter name="tmProject" value="(//a[@id=&#039;mp-project-1-EN-RU&#039;])[1]"/>
+    <parameter name="ptsTranslatorPassword" value="Password456"/>
+    <parameter name="taskForReview" value="//a[@id=&#039;mp-task-page-id-6&#039;]"/>
+    <parameter name="ReviewerUserToAssign" value="//span[text()=&#039;auto_reviewer- (PTS Reviewer)&#039;]"/>
+    <parameter name="webCattProjectTitle" value="(//span[text()=&#039;Boutique&#039;])[2]"/>
+    <parameter name="translatorUserToAssign" value="//span[text()=&#039;auto_translator- (PTS Translator)&#039;]"/>
+    <parameter name="tamTaskCheckbox" value="//input[@id=&#039;mp-row-[6]&#039;]"/>
+    <parameter name="ptsFilterTaskBy" value="6"/>
+    <parameter name="accountManagerAssigned" value="Auto TAM"/>
+    <parameter name="ptsManagerUser" value="auto_ptsmanager"/>
+    <parameter name="ptsTranslatorUser" value="auto_translator"/>
+    <parameter name="adminPassword" value="Password456"/>
+    <parameter name="tamPassword" value="Password456"/>
+    <parameter name="accountManagerField"
+               value="//a[@id=&#039;mp-project-1-EN-RU&#039;]/ancestor::td/preceding-sibling::td[3]/a[@editable-select=&#039;project.accountMgr.id&#039;]"/>
+    <parameter name="ptsManagerPassword" value="Password456"/>
+    <parameter name="url" value="https://twelvetwelvecontrolcenter.mpdvint.com/controlcenter/#/login"/>
+    <parameter name="ptsTaskCheckbox" value="//input[@id=&#039;mp-row-[6]&#039;]"/>
+    <parameter name="adminUser" value="appadmin"/>
+    <parameter name="ptsReviewerUser" value="auto_reviewer"/>
+    <parameter name="taskForTranslation" value="//a[@id=&#039;mp-task-page-id-6&#039;]"/>
+    <parameter name="ptsReviewerPassword" value="Password456"/>
+    <test name="MotionCore_Integration_SmokeTest">
+        <classes>
+            <class name="com.motioncore.automationtests.IntegrationTest"/>
+        </classes>
+    </test> <!-- MotionCore_Integration_SmokeTest -->
+</suite> <!-- Failed suite [MotionCore_IntegrationTest.xml] -->
